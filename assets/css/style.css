@@ -1054,13 +1054,26 @@ section {
 	z-index: 1;
 }
 .blog_area .blog_box .blog_img_box.bg-2 {
-	background: #273f5b url(../images/blog-1.jpg) center center no-repeat;
+	background: #273f5b url(../images/blog-2.png) center center no-repeat;
 	background-size: cover;
 }
 .blog_area .blog_box .blog_img_box.bg-3 {
-	background: #273f5b url(../images/blog-1.jpg) center center no-repeat;
+	background: #273f5b url(../images/blog-3.png) center center no-repeat;
 	background-size: cover;
 }
+.blog_area .blog_box .blog_img_box.bg-4 {
+	background: #273f5b url(../images/blog-4.png) center center no-repeat;
+	background-size: cover;
+}
+.blog_area .blog_box .blog_img_box.bg-5 {
+	background: #273f5b url(../images/blog-5.png) center center no-repeat;
+	background-size: cover;
+}
+.blog_area .blog_box .blog_img_box.bg-6 {
+	background: #273f5b url(../images/blog-6.jpg) center center no-repeat;
+	background-size: cover;
+}
+
 .blog_area .blog_box {
 	position: relative;
 	z-index: 1;
