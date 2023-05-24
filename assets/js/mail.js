@@ -13,8 +13,8 @@ function sendMail() {
             message: msg_val.value,
         };
       
-        const serviceID = "service_6ickh6s";
-        const templateID = "acm26github_gzwvzui";
+        const serviceID = "service_y1ln6wg";
+        const templateID = "template_au1114g";
       
         emailjs.send(serviceID, templateID, params)
         .then(res=>{
@@ -25,7 +25,10 @@ function sendMail() {
             alert("Your message sent successfully!!")
     
         })
-          .catch(err=>console.log(err));
+          .catch(
+            err=>
+                console.log(err)
+            );
     }
   
   }
