@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <script src="assets/js/mail.js"></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+        (function () {
+        emailjs.init("7V2Gg7oW2PnZgITrE");
+        })();
+    </script>
+
 
 </head>
 <body>
@@ -396,7 +407,6 @@
                                 </div><!--end .blog_meta_box-->
                                 <h1>Web App Light Effiency System</h1>
                                 <p>Room monitoring system for light efficiency</p>
-                                <a class="btn btn-primary simple_btn" href="blog-details.html">Learn More</a>
                             </div><!--end .blog_details-->
                         </div><!--end .blog_box-->
                     </div><!--end .col-lg-4-->
@@ -414,7 +424,6 @@
                                 </div><!--end .blog_meta_box-->
                                 <h1>Web App Autonomic Nerveous System</h1>
                                 <p>System to monitor individual health data.</p>
-                                <a class="btn btn-primary simple_btn" href="blog-details.html">Learn More</a>
                             </div><!--end .blog_details-->
                         </div><!--end .blog_box-->
                     </div><!--end .col-lg-4-->
@@ -432,7 +441,6 @@
                                 </div><!--end .blog_meta_box-->
                                 <h1>Web App Safety Vision 4.0</h1>
                                 <p>System for monitoring room and camera settings as room security for hazard detection.</p>
-                                <a class="btn btn-primary simple_btn" href="blog-details.html">Learn More</a>
                             </div><!--end .blog_details-->
                         </div><!--end .blog_box-->
                     </div><!--end .col-lg-4-->
@@ -450,7 +458,6 @@
                                 </div><!--end .blog_meta_box-->
                                 <h1>SPK Pemilihan Prodi</h1>
                                 <p>Application to facilitate prospective students in selecting study programs at PNP.</p>
-                                <a class="btn btn-primary simple_btn" href="blog-details.html">Learn More</a>
                             </div><!--end .blog_details-->
                         </div><!--end .blog_box-->
                     </div><!--end .col-lg-4-->
@@ -468,7 +475,6 @@
                                 </div><!--end .blog_meta_box-->
                                 <h1>UI & Rest API VolunteerEdu</h1>
                                 <p>Platform based design website for E-Learning to anyone in Indonesia area.</p>
-                                <a class="btn btn-primary simple_btn" href="blog-details.html">Learn More</a>
                             </div><!--end .blog_details-->
                         </div><!--end .blog_box-->
                     </div><!--end .col-lg-4-->
@@ -486,7 +492,6 @@
                                 </div><!--end .blog_meta_box-->
                                 <h1>UI Monitoring Data SPO2</h1>
                                 <p>UI for platform design website monitoring SPO2 data. Participate to KMIPN III as participant.</p>
-                                <a class="btn btn-primary simple_btn" href="blog-details.html">Learn More</a>
                             </div><!--end .blog_details-->
                         </div><!--end .blog_box-->
                     </div><!--end .col-lg-4-->
@@ -511,19 +516,74 @@
     **************************************-->
     <footer class="contact_form_area" data-scroll-index="5">
         <div class="container">
-            <div class="contact_form wow fadeInLeft text-center">
-                <div class="hero_section_title">
-                    <h3 class="title_shape">Get In Touch</h3>
-                    <p>for more information, please contact me via the form below.</p>
-                </div><!--end .hero_section_title-->
-                <form action="#" method="POST">
-                    <input class="form-control" type="text" placeholder="Your Name *" required>
-                    <input class="form-control" id="exampleInputEmail1" type="email" placeholder="Your E-mail *" required>
-                    <input class="form-control" type="text" placeholder="Your Subject *" required>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
-                    <button class="btn btn-primary blue_btn" type="submit" value="Send Message">Send Message</button>
-                </form>
-            </div><!--end .contact_form-->
+            <div class="contact_form wow fadeInLeft">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="title_shape">Send a message</h3><br>
+                       
+                        <div class="form-group">
+                            <h5 for="name">Name</h5>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="Enter name"
+                                pattern="^[^<>]+$" 
+                                title="Input tidak boleh mengandung metakarakter."
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                        <h5 for="email">Email</h5>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Enter email"
+                            required
+                        />
+                        </div>
+                        <div class="form-group">
+                            <h5 for="message">Message</h5>
+                            <textarea class="form-control" id="message" rows="3" required placeholder="Your message here"></textarea>
+                        </div>
+                        <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+                        
+                       
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="title_shape">Get In Touch</h3><br>
+                        <p style="text-align: justify;">If you ever want to grab a coffee/bubble
+                            tea (virtually) or just want a quick chat -
+                            you can find me on social media or you can send me a message here!
+                        </p>
+                        <div class="topbar">
+                            <ul class="social_network text-center">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/arin-cantika-musi-6124ab1aa/" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:arincantikam@gmail.com" target="_blank">
+                                        <i class="fa fa-google"></i>
+                                        <i class="fa fa-google"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@arincantika26" target="_blank">
+                                        <i class="fa fa-youtube"></i>
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    
+                </div><!--end .contact_form-->
+            </div>
         </div>
 
     </footer><!--end .contact_form-->
@@ -538,7 +598,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="wow fadeInUp">Copyright &copy; 2019. All Rights Reserved By <a href="http://techydevs.com" target="_blank">Techydevs</a></p>
+                    <p class="wow fadeInUp">Copyright &copy; 2023. All Rights Reserved By <a href="https://arincantikam26.github.io/" target="_blank">arincantikam26</a></p>
                 </div><!--end .col-lg-12-->
             </div><!--end .row-->
         </div><!--end .container-->
@@ -553,9 +613,6 @@
     </a>
     <!--ScrollTop Icon-->
 
-
-
-
     <!--Ajax-->
     <script src="assets/js/jquery-2.2.4.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -568,5 +625,6 @@
     <script src="assets/js/waypoint.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
 </body>
 </html>

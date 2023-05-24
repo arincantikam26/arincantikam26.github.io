@@ -428,13 +428,7 @@ section {
 =====================================*/
 .topbar {
 	background: #0097B2;
-	-webkit-box-shadow: 0 0 21px rgba(4, 159, 251, 0.20);
-	box-shadow: 0 0 21px rgba(4, 159, 251, 0.20);
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
+	margin-top: 20px;
 }
 .topbar .social_network {
 	display: -webkit-box;
